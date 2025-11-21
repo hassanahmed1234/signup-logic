@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 800px;
+     background-image: linear-gradient(45deg , rgb(8, 8, 107), rgb(90, 3, 3));
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+
+}
+.logo{
+    width: 100px;
+    height:100%;
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+.links{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.links a{
+    
+    text-decoration: none;
+}
+#main{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+.cardbox{
+    height: 250px;
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(231, 234, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardleft {
+   width: 50%;
+    height: 100%;
+     display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.cardright  {
+   width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column;
+}  
+    
+.cardright img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+#salary{
+    color: blue;
+}
+#location{
+    font-weight: 500;
+}
+#job{
+     font-weight: 500;
+}
+#views{
+    text-align: right;
+
+}
+#posted{
+    text-align: right;
+    font-weight: 500;
+}
+.modalmain{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(197, 202, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    gap: 15px;
+}
+.hide{
+    display: none;
+}
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.inputdiv{
+ width: 90%;
+ height: 40px;
+ margin-bottom: 25px;
+
+}
+.inputdiv input{
+   background-color: transparent;
+   padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+.btndiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#btn{
+    margin-left: auto;
+}
