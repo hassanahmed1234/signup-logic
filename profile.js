@@ -6,7 +6,6 @@ if (!loggedIn) {
     
 }
 
-modal.classList.add('hide')
 
 var profilename = document.querySelector('#name')
 var email = document.querySelector('#email')
@@ -15,7 +14,9 @@ var edit = document.querySelector('#edit')
 var jobs = document.querySelector('#jobs')
 var logout = document.querySelector('#logout')
 var modal = document.querySelector('.modalmain')
-var close = document.querySelector('#close')
+
+modal.classList.add('hide')
+var closebtn = document.querySelector('#closebtn')
 var submit = document.querySelector('#submit')
 var dp = document.querySelector('#dp')
 
@@ -34,10 +35,11 @@ edit.addEventListener('click', () => {
 
 
 })
-close.addEventListener('click', () => {
-
+closebtn.addEventListener('click', () => {
+    console.log('click');
+    
     modal.classList.add('hide')
-    document.body.classList.remove('overlay')
+    // document.body.classList.remove('overlay')
 })
 
 submit.addEventListener('click', () => {
@@ -92,3 +94,5 @@ jobs.addEventListener('click',()=>{
     window.location = 'jobs.html'
     
 })
+
+

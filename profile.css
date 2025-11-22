@@ -87,14 +87,7 @@ a{
 .hide{
     display: none;
 }
-.overlay{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.637);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
+
 .inputdiv{
  width: 90%;
  height: 40px;
