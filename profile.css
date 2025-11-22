@@ -64,7 +64,7 @@ body{
 }
 
 a{
-    color: blue;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
     cursor: pointer;
 }

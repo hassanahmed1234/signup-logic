@@ -36,11 +36,19 @@ submit.addEventListener('click',()=>{
 
     var jobname = document.querySelector('#jobname')
     var salaryinput = document.querySelector('#salaryinput')
-    var company = document.querySelector('#company')
-    var location = document.querySelector('#location')
-    var uploadDate = document.querySelector('#date')
+    var company = document.querySelector('#companyInput')
+    var location = document.querySelector('#locationInput')
+    var uploadDate = document.querySelector('#dateInput')
+    var views = document.querySelector('#viewsinput')
+    console.log(jobname);
+    console.log(salaryinput);
+    console.log(company);
+    console.log(location);
+    console.log(uploadDate);
+    console.log(views);
+    
 
-    if (!jobname.value || !salaryinput.value || !company.value|| !location.value) {
+    if (!jobname.value || !salaryinput.value || !company.value|| !location.value || !uploadDate.value || !views.value) {
        return alert('All feilds are required..!')
     }
 

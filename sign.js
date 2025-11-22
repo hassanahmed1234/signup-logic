@@ -75,3 +75,20 @@ window.location = 'login.html'
 
 
 }
+
+
+
+var menuicon = document.getElementById('menuicon')
+var sideNav = document.getElementById('sideNav')
+
+sideNav.classList.add   ('hide')
+menuicon.addEventListener('click',()=>{
+   sideNav.classList.toggle('hide')
+   sideNav.classList.add('animate__animated','animate__slideInLeft')
+
+
+  setTimeout(()=>{
+     sideNav.classList.remove('animate__animated','animate__slideInLeft')
+},900)
+  })
+

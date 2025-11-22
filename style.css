@@ -34,7 +34,7 @@ body{
 
 }
 .links{
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: flex;
     gap: 20px;
@@ -71,4 +71,60 @@ body{
 .signheading{
     color: rgb(59, 49, 49);
     text-decoration:underline ;
+}
+.links i{
+    display: none;
+}
+.nav2{
+    display: none;
+}
+
+@media only screen and (max-width:900px) {
+    .links{
+        justify-content: end;
+    }
+    .links i{
+    display: block;
+    cursor: pointer;
+}
+.links a{
+    
+   display: none;
+}
+#sideNav{
+    height: 100vh;
+    width: 300px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+     transition: 0.3s ease all;
+
+    
+
+}
+.logo2{
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.links2 a{
+  
+    text-decoration: none;
+    color: black;
+}
+
+    
+}
+
+.hide{
+    transition: 0.3s ease all;
+    opacity: 0;
 }

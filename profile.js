@@ -3,8 +3,10 @@ var loggedIn = JSON.parse(localStorage.getItem('loggedIn'))
 if (!loggedIn) {
     alert('create your account')
     window.location = 'login.html'
+    
 }
 
+modal.classList.add('hide')
 
 var profilename = document.querySelector('#name')
 var email = document.querySelector('#email')
@@ -19,7 +21,6 @@ var dp = document.querySelector('#dp')
 
 email.innerHTML = loggedIn.email
 
-modal.classList.add('hide')
 
 profilename.innerHTML = `${loggedIn.firstname} ${loggedIn.lastname}`
 
